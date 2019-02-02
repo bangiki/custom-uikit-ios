@@ -7,24 +7,17 @@
 //
 
 import UIKit
-
-//
-//  ListComponentViewController.swift
-//  custom-uikit-ios
-//
-//  Created by Rizki Ramdani on 02/02/19.
-//  Copyright © 2019 -. All rights reserved.
-//
-
-import UIKit
 import SnapKit
 
 class ListComponentViewController: UIViewController {
+  
+  fileprivate let cellId = "Cell123"
   
   lazy var table: UITableView = {
     let table = UITableView()
     table.delegate = self
     table.dataSource = self
+    table.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     return table
   }()
   
@@ -65,11 +58,15 @@ extension ListComponentViewController: UITableViewDelegate{
 
 extension ListComponentViewController: UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
+    
+    return HardCodeData.listOfComponentName.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+    cell.textLabel?.text = HardCodeData.listOfComponentName[indexPath.row]
+    cell.accessoryType = .disclosureIndicator
+    return cell
   }
   
   

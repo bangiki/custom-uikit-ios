@@ -20,6 +20,7 @@
 		800D3BE6220571E30033D171 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D3BE5220571E30033D171 /* SnapKit.framework */; };
 		800D3BEF22057AD70033D171 /* ListComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BED22057AD70033D171 /* ListComponentViewController.swift */; };
 		800D3BF022057AD70033D171 /* ListComponentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800D3BEE22057AD70033D171 /* ListComponentViewController.xib */; };
+		800D3BF3220582DD0033D171 /* HardCodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BF2220582DD0033D171 /* HardCodeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		800D3BE5220571E30033D171 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		800D3BED22057AD70033D171 /* ListComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponentViewController.swift; sourceTree = "<group>"; };
 		800D3BEE22057AD70033D171 /* ListComponentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListComponentViewController.xib; sourceTree = "<group>"; };
+		800D3BF2220582DD0033D171 /* HardCodeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCodeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		800D3BD622056A940033D171 /* Domainless */ = {
 			isa = PBXGroup;
 			children = (
+				800D3BF1220582BC0033D171 /* Model */,
 				800D3BD922056ABA0033D171 /* Extention */,
 				800D3BD822056AAD0033D171 /* View */,
 			);
@@ -206,6 +209,14 @@
 				800D3BE5220571E30033D171 /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800D3BF1220582BC0033D171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BF2220582DD0033D171 /* HardCodeData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +375,7 @@
 				800D3BA822056A3A0033D171 /* ViewController.swift in Sources */,
 				800D3BAE22056A3A0033D171 /* custom_uikit_ios.xcdatamodeld in Sources */,
 				800D3BEF22057AD70033D171 /* ListComponentViewController.swift in Sources */,
+				800D3BF3220582DD0033D171 /* HardCodeData.swift in Sources */,
 				800D3BDE22056C6A0033D171 /* SplashScreenViewController.swift in Sources */,
 				800D3BA622056A3A0033D171 /* AppDelegate.swift in Sources */,
 			);
