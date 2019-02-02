@@ -15,6 +15,11 @@
 		800D3BB322056A3D0033D171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800D3BB122056A3D0033D171 /* LaunchScreen.storyboard */; };
 		800D3BBE22056A3D0033D171 /* custom_uikit_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BBD22056A3D0033D171 /* custom_uikit_iosTests.swift */; };
 		800D3BC922056A3D0033D171 /* custom_uikit_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BC822056A3D0033D171 /* custom_uikit_iosUITests.swift */; };
+		800D3BDE22056C6A0033D171 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BDC22056C6A0033D171 /* SplashScreenViewController.swift */; };
+		800D3BDF22056C6A0033D171 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800D3BDD22056C6A0033D171 /* SplashScreenViewController.xib */; };
+		800D3BE6220571E30033D171 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800D3BE5220571E30033D171 /* SnapKit.framework */; };
+		800D3BEF22057AD70033D171 /* ListComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800D3BED22057AD70033D171 /* ListComponentViewController.swift */; };
+		800D3BF022057AD70033D171 /* ListComponentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 800D3BEE22057AD70033D171 /* ListComponentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		800D3BC422056A3D0033D171 /* custom-uikit-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom-uikit-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		800D3BC822056A3D0033D171 /* custom_uikit_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_uikit_iosUITests.swift; sourceTree = "<group>"; };
 		800D3BCA22056A3D0033D171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		800D3BDC22056C6A0033D171 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		800D3BDD22056C6A0033D171 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		800D3BE5220571E30033D171 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		800D3BED22057AD70033D171 /* ListComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponentViewController.swift; sourceTree = "<group>"; };
+		800D3BEE22057AD70033D171 /* ListComponentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListComponentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800D3BE6220571E30033D171 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				800D3BBC22056A3D0033D171 /* custom-uikit-iosTests */,
 				800D3BC722056A3D0033D171 /* custom-uikit-iosUITests */,
 				800D3BA322056A3A0033D171 /* Products */,
+				800D3BE4220571E20033D171 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +111,11 @@
 		800D3BA422056A3A0033D171 /* custom-uikit-ios */ = {
 			isa = PBXGroup;
 			children = (
-				800D3BA522056A3A0033D171 /* AppDelegate.swift */,
+				800D3BD722056A9D0033D171 /* Feature */,
+				800D3BD622056A940033D171 /* Domainless */,
 				800D3BA722056A3A0033D171 /* ViewController.swift */,
 				800D3BA922056A3A0033D171 /* Main.storyboard */,
 				800D3BAF22056A3D0033D171 /* Assets.xcassets */,
-				800D3BB122056A3D0033D171 /* LaunchScreen.storyboard */,
 				800D3BB422056A3D0033D171 /* Info.plist */,
 				800D3BAC22056A3A0033D171 /* custom_uikit_ios.xcdatamodeld */,
 			);
@@ -128,6 +140,74 @@
 			path = "custom-uikit-iosUITests";
 			sourceTree = "<group>";
 		};
+		800D3BD622056A940033D171 /* Domainless */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BD922056ABA0033D171 /* Extention */,
+				800D3BD822056AAD0033D171 /* View */,
+			);
+			path = Domainless;
+			sourceTree = "<group>";
+		};
+		800D3BD722056A9D0033D171 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BE022056DDA0033D171 /* ListComponent */,
+				800D3BDB22056AEC0033D171 /* SplashScreen */,
+				800D3BDA22056ADA0033D171 /* ApplicationEntry */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		800D3BD822056AAD0033D171 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		800D3BD922056ABA0033D171 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		800D3BDA22056ADA0033D171 /* ApplicationEntry */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BB122056A3D0033D171 /* LaunchScreen.storyboard */,
+				800D3BA522056A3A0033D171 /* AppDelegate.swift */,
+			);
+			path = ApplicationEntry;
+			sourceTree = "<group>";
+		};
+		800D3BDB22056AEC0033D171 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BDC22056C6A0033D171 /* SplashScreenViewController.swift */,
+				800D3BDD22056C6A0033D171 /* SplashScreenViewController.xib */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		800D3BE022056DDA0033D171 /* ListComponent */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BED22057AD70033D171 /* ListComponentViewController.swift */,
+				800D3BEE22057AD70033D171 /* ListComponentViewController.xib */,
+			);
+			path = ListComponent;
+			sourceTree = "<group>";
+		};
+		800D3BE4220571E20033D171 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800D3BE5220571E30033D171 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +218,7 @@
 				800D3B9E22056A3A0033D171 /* Sources */,
 				800D3B9F22056A3A0033D171 /* Frameworks */,
 				800D3BA022056A3A0033D171 /* Resources */,
+				800D3BE322056EA90033D171 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -233,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				800D3BB322056A3D0033D171 /* LaunchScreen.storyboard in Resources */,
+				800D3BDF22056C6A0033D171 /* SplashScreenViewController.xib in Resources */,
+				800D3BF022057AD70033D171 /* ListComponentViewController.xib in Resources */,
 				800D3BB022056A3D0033D171 /* Assets.xcassets in Resources */,
 				800D3BAB22056A3A0033D171 /* Main.storyboard in Resources */,
 			);
@@ -254,6 +337,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		800D3BE322056EA90033D171 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		800D3B9E22056A3A0033D171 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +363,8 @@
 			files = (
 				800D3BA822056A3A0033D171 /* ViewController.swift in Sources */,
 				800D3BAE22056A3A0033D171 /* custom_uikit_ios.xcdatamodeld in Sources */,
+				800D3BEF22057AD70033D171 /* ListComponentViewController.swift in Sources */,
+				800D3BDE22056C6A0033D171 /* SplashScreenViewController.swift in Sources */,
 				800D3BA622056A3A0033D171 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,13 +539,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8K928G76ZY;
+				DEVELOPMENT_TEAM = UB34286TT5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "custom-uikit-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "id.custom.ramdanix.custom-uikit-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "id.custom.ramdanix.custom-uikit-iosapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -453,13 +561,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8K928G76ZY;
+				DEVELOPMENT_TEAM = UB34286TT5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "custom-uikit-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "id.custom.ramdanix.custom-uikit-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "id.custom.ramdanix.custom-uikit-iosapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
